@@ -4,8 +4,11 @@ import {MatDialog, MatDialogRef, MatDialogConfig, MAT_DIALOG_DATA} from '@angula
 import { ApiService } from '../api.service';
 
 export interface DialogData {
-  animal: string;
-  name: string;
+    icao: any;
+    country: any;
+    modes: any;
+    days: any;
+    airport: any;
 }
 
 @Component({
@@ -138,7 +141,7 @@ export class DashboardComponentDialog implements OnInit {
   
   panelOpenState = false;
   flightDetails:any[];
-
+  
   ngOnInit() { }
     
   constructor( public dialogRef: MatDialogRef<DashboardComponentDialog>, @Inject(MAT_DIALOG_DATA) public data: DialogData,  private api: ApiService) {}
