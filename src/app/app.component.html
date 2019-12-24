@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+   <mat-toolbar-row>
+   <span>Open Sky Feeder</span>
+      <span class="spacer"></span>
+      <a mat-button routerLink="{{AUTH_LINK}}">{{AUTH_LINK === 'login' ? "Login" : "Logout"}}</a>
+   </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

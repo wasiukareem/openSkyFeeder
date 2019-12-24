@@ -1,0 +1,23 @@
+.container {
+    padding:0px 20px 20px 20px;
+    margin:5px;
+}
+
+.location-card {
+   max-width: 300px;
+   float:left;
+   margin:20px 35px 20px 0px;
+   cursor:pointer;
+   -webkit-transition: transform .5s; /* Safari prior 6.1 */
+   transition: transform .4s;
+}
+
+.location-card:hover {
+   transform: scale(1.15);
+   -webkit-transition: transform .5s; /* Safari prior 6.1 */
+   transition: transform .4s;
+}
+
+.clearboth {
+   clear:both;
+}
