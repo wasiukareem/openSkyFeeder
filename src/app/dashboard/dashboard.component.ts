@@ -17,15 +17,11 @@ export interface DialogData {
 export class DashboardComponent implements OnInit {
   locations: any[];
   days: any[];
-  flight_details: any[];
   flight_modes: any[];
   
   constructor(public dialog: MatDialog, private api: ApiService) { }
 
   ngOnInit() {
-  
-    
-  
     this.days = [{
       "count": 1
     },
@@ -141,7 +137,7 @@ export class DashboardComponent implements OnInit {
 export class DashboardComponentDialog implements OnInit {
   
   panelOpenState = false;
-  flight_details: any[];
+  flightDetails:any[];
 
   ngOnInit() { }
     
@@ -160,8 +156,8 @@ export class DashboardComponentDialog implements OnInit {
     date.setDate(date.getDate() - f_day);
     let begin = date.getTime() / 1000;
     
-    this.api.initiateGet(f_mode, icao, Math.round(begin), Math.round(end)).subscribe((data) => {
-      this.flight_details = data;
+    this.api.initiateGet(f_mode, icao, Math.round(begin), Math.round(end)).subscribe((data: any) => {
+      this.flightDetails = data;
       console.log(data);
     },
     (error: any) => {

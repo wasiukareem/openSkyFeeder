@@ -38,8 +38,8 @@
 <mat-grid-tile 
    [colspan] = "1"
    [rowspan] = "1" style="max-height:400px; overflow-y:auto; padding:30px;">
-   <mat-accordion *ngIf="flight_details" class="full-width" style="width:100%; padding:20px">
-		<mat-expansion-panel  *ngFor = "let info of flight_details | slice:0:15;" (opened)="panelOpenState = true" (closed)="panelOpenState = false" style="margin-top:10px;">
+   <mat-accordion *ngIf="flightDetails" class="full-width" style="width:100%; padding:20px">
+		<mat-expansion-panel  *ngFor = "let info of flightDetails | slice:0:15;" (opened)="panelOpenState = true" (closed)="panelOpenState = false" style="margin-top:10px;">
 			<mat-expansion-panel-header>
 			  <mat-panel-title style="color:#444; font-size:13px;">
 				Flight ICA024
