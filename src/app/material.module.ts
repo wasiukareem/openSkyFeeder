@@ -13,7 +13,8 @@ import {
 	MatExpansionModule,
 	MatDialogModule,
 	MatBadgeModule,
-	MatSelectModule
+	MatSelectModule,
+	MatProgressSpinnerModule
 } from  '@angular/material';
 import { MatDatepickerModule } from  '@angular/material/datepicker';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -37,7 +38,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 		MatExpansionModule,
 		MatDialogModule,
 		MatBadgeModule,
-		MatSelectModule
+		MatSelectModule,
+		MatProgressSpinnerModule
 	],
 	exports: [
 		MatNativeDateModule,
@@ -56,7 +58,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 		MatExpansionModule,
 		MatDialogModule,
 		MatBadgeModule,
-		MatSelectModule
+		MatSelectModule,
+		MatProgressSpinnerModule
 	],
  
 })
