@@ -49,8 +49,8 @@
 			  </mat-panel-description>
 			</mat-expansion-panel-header>
 			<p><small>Airport</small><br />{{info.estArrivalAirport}}</p>
-			<p><small>Take Off Time</small><br />{{info.firstSeen}}</p>
-			<p><small>Arriving At</small><br />{{info.firstSeen}}</p>
+			<p><small>Take Off Time</small><br />{{info.firstSeen * 1000 | date:'medium'}}</p>
+			<p><small>Arriving At</small><br />{{info.lastSeen * 1000 | date:'medium'}}</p>
 		</mat-expansion-panel>
    </mat-accordion>
    </mat-grid-tile>
